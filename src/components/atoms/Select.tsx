@@ -2,7 +2,7 @@ import React from "react";
 import type { UseFormRegisterReturn } from "react-hook-form";
 
 interface SelectProps {
-  label?: string; // TAMBAHKAN TANDA TANYA DI SINI
+  label?: string; 
   register: UseFormRegisterReturn;
   error?: string;
   options: { label: string; value: string }[];
@@ -16,7 +16,6 @@ export const Select: React.FC<SelectProps> = ({
 }) => {
   return (
     <div className="flex flex-col gap-1">
-      {/* Label sekarang bersifat opsional karena sudah ada di FormField */}
       {label && <label className="font-medium text-gray-700">{label}</label>}
       
       <select
