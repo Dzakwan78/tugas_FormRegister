@@ -3,7 +3,7 @@ import React from "react";
 interface FormFieldProps {
   label: string;
   error?: string;
-  children: React.ReactNode; // Tempat untuk memasukkan atom (Input/Select/Textarea)
+  children: React.ReactNode; 
 }
 
 export const FormField: React.FC<FormFieldProps> = ({
